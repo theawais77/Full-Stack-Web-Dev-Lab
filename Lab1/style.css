@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
+}
+
+.cv-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #0072ce;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0072ce;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+  color: #333;
+}
+
+h2 {
+  font-size: 16px;
+  color: #0072ce;
+  border-bottom: 1px solid #0072ce;
+  padding-bottom: 3px;
+  margin-top: 20px;
+}
+
+.personal-info p,
+.job-applied p,
+.experience p,
+.education p,
+.skills p {
+  margin: 3px 0;
+}
+
+.experience-item, .edu-item {
+  margin-bottom: 15px;
+}
+
+ul {
+  margin: 5px 0 10px 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.projects ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
