@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 2</title>
+  <style>
+    *{
+      background-color: rgb(124, 255, 189);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2 id="demo">Hello Jee I am learning JS</h2>
+  <h1 id="second">I can change attributes of HTML by one click hehe</h1>
+  <button onclick="changeStyle()">Change Style of h2</button>
+  <button onclick="changeAttributes()">Change Attributes of h1 </button>
+
+  <script>
+    function changeStyle() {
+      let element = document.getElementById("demo");
+      element.style.color = "black";
+      element.style.fontSize = "30px";
+      element.style.backgroundColor = "red";
+    }
+    function changeAttributes() {
+      let element = document.getElementById("second");
+      element.setAttribute("style", "color: black; font-size: 30px; background-color: aqua;");
+    }
+  </script>
+</body>
+</html>

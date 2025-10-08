@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 1</title>
+  <style>
+    body {
+    
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+    }
+    button {
+      padding: 10px 15px;
+      margin: 5px;
+      background-color: #fff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="color: white;">Turn Image On and Off</h2>
+
+  
+  <img id="myImage" src="images/on.jpg" style="width:150px">
+
+  <br><br>
+  <button onclick="turnOn()">Show On Image</button>
+  <button onclick="turnOff()">Show Off Image</button>
+
+  <script>
+    function turnOn() {
+      document.getElementById("myImage").src = "images/on.jpg"; 
+    }
+    function turnOff() {
+      document.getElementById("myImage").src = "images/off.png"; 
+    }
+  </script>
+</body>
+</html>

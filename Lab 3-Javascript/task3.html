@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hide and Show Elements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+    }
+
+    #elements {
+      margin-top: 20px;
+      padding: 20px;
+      background: #fddcdc33;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin: 5px;
+      background-color: #fff;
+      color: #1e3c72;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Hide and Show Html Elements</h1>
+
+  <div id="elements">
+    <p>This is a paragraph which can be hidden by just one click hehe(❁´◡`❁)</p>
+  </div>
+
+  <div>
+    <button onclick="hideElement()">Hide</button>
+    <button onclick="showElement()">Show</button>
+  </div>
+
+  <script>
+    const content = document.getElementById("elements");
+
+ 
+    function hideElement() {
+      content.style.display = "none";
+    }
+
+    function showElement() {
+      content.style.display = "block";
+    }
+
+  </script>
+
+</body>
+</html>
